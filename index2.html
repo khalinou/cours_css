@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- le trite de la page -->
+    <title>Cours Html</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="téléchargement.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1><i>&#9755;</i> Texte-Titre H1</h1>
+      <p>
+        Voici un texte basique,<em>voici un texte en italique</em
+        ><strong> et un texte en gras.</strong
+        ><span> L'élément span ne revient pas à la ligne</span>.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe animi
+        vero optio veritatis consequatur laudantium id nesciunt ad? Ipsam quo
+        quis maiores
+      </p>
+    </header>
+    <section>
+      <div>
+        <h2>Photos-Titre H2</h2>
+        <img
+          src="My-Hero-Academia-Saison-6-OP2.jpg"
+          height="200
+        "
+          alt="photo deku en saison 6"
+        />
+      </div>
+      <div>
+        <h3>Listes-Titre H3</h3>
+        <ul>
+          <li>pate</li>
+          <li>patte</li>
+          <li>paté</li>
+        </ul>
+        <ol>
+          <li>mère</li>
+          <li>mer</li>
+          <li>maire</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux titre H4</h4>
+        <table border="1" width="50%">
+          <!-- légende -->
+          <caption>
+            Populations d'Europe
+          </caption>
+          <!-- En-tete -->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Poplation</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau -->
+          <tbody>
+            <tr>
+              <td>france</td>
+              <td>66M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>82M</td>
+            </tr>
+            <tr>
+              <td>Espagne</td>
+              <td>42M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5><i>&#9755;</i> Liens titre H5</h5>
+        <a href="https://www.youtube.com/" target="_blank"> youtube</a>
+        <br />
+        <a href="https://www.youtube.com/watch?v=qsbkZ7gIKnc" target="_blank">
+          Video pour le code</a
+        >
+      </div>
+      <div>
+        <h6>Vidéo-Titre H6</h6>
+        <video src="montagnes-59291.mp4" height="200" autoplay loop></video>
+      </div>
+    </section>
+    <br>
+    <!-- formulaire -->
+    <section>
+        <h2><i>&#9755;</i> Formulaire</h2>
+        <form action="/action.PHP" method="post">
+        <label for="name">Nom </label><input id="name" type="text" placeholder="Entrez votre nom"><br>
+        <label for="age">Age</label>
+        <input id="age" type="number" min="0" max="99" value="18" step="1"><br>
+        <!-- inpute select -->
+        <label for="gender">Genre</label>
+        <select id="gender">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option selected value="none">Non précisé</option>
+        </select><br>
+        <!-- input radio -->
+        <div>
+            <input type="radio" name="type" id="human">
+            <label for="human">Humain</label>
+
+            <input type="radio" name="type" id="dog">
+            <label for="dog">Chien</label>
+
+            <input type="radio" name="type" id="cat">
+            <label for="cat">Chat</label>
+        </div>
+
+        <textarea cols="30" rows="10" placeholder="Entrez votre demande ici:"></textarea><br>
+        <!-- input checkbox -->
+        <label><input type="checkbox"/>Accepter les conditions</label><br>
+        <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br>
+    <!-- mail & encoie de fichier -->
+    <footer>
+        <a href="mailto:fs@gmail.com">Ecrivez moi!</a>
+        <br>
+        <a href="notice.texte" download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+
+</html>
